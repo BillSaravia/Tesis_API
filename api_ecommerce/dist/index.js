@@ -14,7 +14,7 @@ dotenv.config();
 //CONEXION A LA BASE DE DATOS
 
 _mongoose.default.Promise = global.Promise;
-const dbUrL = "mongodb://localhost:27017/ecommerce_Tecshop";
+const dbUrL = process.env.MONGO_URL;
 _mongoose.default.connect(dbUrL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
