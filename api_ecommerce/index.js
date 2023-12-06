@@ -8,6 +8,7 @@ dotenv.config()
 //CONEXION A LA BASE DE DATOS
 
 mongoose.Promise = global.Promise;
+//MongoDB Cloud
 const dbUrL = process.env.MONGO_URL;
 mongoose.connect(
     dbUrL , {
