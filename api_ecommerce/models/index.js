@@ -7,7 +7,7 @@ import Cupone from './Cupone'
 import Discount from './Discount'
 import Cart from './Cart'
 import AddressClient from './AddressClient'
-
+import HelpForm from './HelpForm'
 import Sale from './Sale'
 import SaleDetail from './SaleDetail'
 import SaleAddress from './SaleAddress'
@@ -23,6 +23,7 @@ export default {
     Cupone,
     Discount,
     Cart,
+    HelpForm,
     AddressClient,
     Sale,
     SaleDetail,
