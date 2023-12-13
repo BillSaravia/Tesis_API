@@ -266,6 +266,11 @@ export default {
                 address_client: ADDRESS_CLIENT,
             })
 
+            let HELP_FORM = await models.HelpForm.find({user: user_id}).sort({'createdAt': -1});
+            res.status(200).json({
+                help_form: HELP_FORM,
+            })
+
         } catch (error) {
             console.log(error);
             res.status(500).send({
