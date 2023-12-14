@@ -169,7 +169,7 @@ export default {
             res.status(200).json({
                 message: "LA IMAGEN SE SUBIO PERFECTAMENTE",
                 imagen: {
-                    imagen: 'https://tecshop-ecommerce-api.onrender.com'+'/api/products/uploads/product/'+imagen_name,
+                    imagen: process.env.URL_BACKEND+'/api/products/uploads/product/'+imagen_name,
                     _id: req.body.__id
                 }
             })
