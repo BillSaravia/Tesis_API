@@ -2,12 +2,12 @@ export default {
     product_list: (product, variedades = []) => {
       // Check if product.galerias is defined before mapping over it
       let GALERIAS = product.galerias ? product.galerias.map((galeria) => {
-        galeria.imagen = 'http://localhost:3000' + '/api/products/uploads/product/' + galeria.imagen;
+        galeria.imagen = 'https://tecshop-ecommerce-api.onrender.com' + '/api/products/uploads/product/' + galeria.imagen;
         return galeria;
       }) : [];
 
       // Check if product.portada is defined
-      const portadaUrl = product.portada ? 'http://localhost:3000' + '/api/products/uploads/product/' + product.portada : '';
+      const portadaUrl = product.portada ? 'https://tecshop-ecommerce-api.onrender.com' + '/api/products/uploads/product/' + product.portada : '';
 
       // Use a safer method to get a random index in case GALERIAS is empty
       const VAL = GALERIAS.length > 0 ? Math.floor(Math.random() * GALERIAS.length) : 0;
