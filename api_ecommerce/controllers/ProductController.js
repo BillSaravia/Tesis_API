@@ -120,12 +120,12 @@ export default {
         try {
             var img = req.params['img'];
 
-            fs.stat('../uploads/product/'+img, function(err){
+            fs.stat('./uploads/product/'+img, function(err){
                 if(!err){
-                    let path_img = '../uploads/product/'+img;
+                    let path_img = './uploads/product/'+img;
                     res.status(200).sendFile(path.resolve(path_img));
                 }else{
-                    let path_img = '../uploads/default.jpg';
+                    let path_img = './uploads/default.jpg';
                     res.status(200).sendFile(path.resolve(path_img));
                 }
             })
@@ -169,7 +169,7 @@ export default {
             res.status(200).json({
                 message: "LA IMAGEN SE SUBIO PERFECTAMENTE",
                 imagen: {
-                    imagen: process.env.URL_BACKEND+'/api/products/uploads/product/'+imagen_name,
+                    imagen: 'https://tecshop-ecommerce-api.onrender.com'+'/api/products/uploads/product/'+imagen_name,
                     _id: req.body.__id
                 }
             })
