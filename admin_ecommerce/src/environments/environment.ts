@@ -8,7 +8,7 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: false,
   apiUrl: 'api',
-  URL_BACKEND: 'https://tecshop-ecommerce-api.onrender.com',
+  URL_BACKEND: 'https://tecshop-ecommerce-api.onrender.com/',
   URL_SERVICIOS: 'https://tecshop-ecommerce-api.onrender.com/api',
   URL_FROTEND: 'http://localhost:4200',
 };
