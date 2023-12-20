@@ -2,7 +2,7 @@ export default {
     product_list: (product, variedades = []) => {
       // Check if product.galerias is defined before mapping over it
       let GALERIAS = product.galerias ? product.galerias.map((galeria) => {
-        galeria.imagen = process.env.URL_W + '/api/products/uploads/product/' + galeria.imagen;
+        galeria.imagen = process.env.URL_W + galeria.imagen;
         return galeria;
       }) : [];
 
