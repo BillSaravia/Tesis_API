@@ -8,7 +8,6 @@ export default {
 
       // Check if product.portada is defined
       const portadaUrl = product.portada ? 'https://tecshop-ecommerce-api.onrender.com' + '/api/products/uploads/product/' + product.portada : '';
-
       // Use a safer method to get a random index in case GALERIAS is empty
       const VAL = GALERIAS.length > 0 ? Math.floor(Math.random() * GALERIAS.length) : 0;
       const IMAGEN_TWO = GALERIAS.length > 0 ? GALERIAS[VAL].imagen : '';
