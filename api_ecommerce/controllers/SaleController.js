@@ -35,7 +35,7 @@ async function send_email(sale_id) {
         readHTMLFile(process.cwd() + '/mails/email_sale.html', (err, html)=>{
                             
             OrderDetail.map((detail) => {
-                detail.product.imgs = 'https://tecshop-ecommerce-api.onrender.com'+'/api/products/uploads/product/'+detail.product.portada;
+                detail.product.imgs = process.env.URL_BACKEND+'/api/products/uploads/product/'+detail.product.portada;
                 return detail;
             });
 
