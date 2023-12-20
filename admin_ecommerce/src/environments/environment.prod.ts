@@ -4,8 +4,8 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: false,
   apiUrl: 'api',
-  URL_BACKEND: 'http://api.Tecshop.site/',
-  URL_SERVICIOS: 'http://api.Tecshop.site/api',
-  URL_FROTEND: 'http://admin.Tecshop.site/',
+  URL_BACKEND: 'http://127.0.0.1:3000/',
+  URL_SERVICIOS: 'http://127.0.0.1:3000/api',
+  URL_FROTEND: 'http://localhost:4200',
   // apiUrl: 'mysite.com/api'
 };
